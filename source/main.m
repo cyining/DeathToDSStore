@@ -35,6 +35,20 @@ int main( int argc, char* argv[] )
 		ProcessSerialNumber psn; FindProcessBySignature( 'FNDR', 'MACS', &psn );
 		pid_t pid; GetProcessPID( &psn, &pid );
 		
+		int retry = 5;
+		while (!pid && retry--)
+		{
+			[NSThread sleepForTimeInterval:1.0f];
+			FindProcessBySignature( 'FNDR', 'MACS', &psn );
+			GetProcessPID( &psn, &pid );
+		}
+		if (!pid)
+		{
+			NSLog(@"missing target");
+			[pool release];
+			return -1;
+		}
+
 		NSString* bundlePath = [NSString stringWithCString:argv[1] encoding:NSASCIIStringEncoding];
 		NSString* stubPath = [NSString stringWithCString:argv[2] encoding:NSASCIIStringEncoding];
 		
