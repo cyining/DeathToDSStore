@@ -117,7 +117,7 @@
 		6CF05838182A01FF00B959DF /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
 		6CF05839182A01FF00B959DF /* udint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = udint.h; sourceTree = "<group>"; };
 		6CF0583A182A01FF00B959DF /* udis86.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = udis86.c; sourceTree = "<group>"; };
-		6CF0583B182A01FF00B959DF /* udis86.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = udis86.h; path = ../mach_override/udis86.h; sourceTree = "<group>"; };
+		6CF0583B182A01FF00B959DF /* udis86.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = udis86.h; path = mach_star/udis86.h; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* DeathToDSStore-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "DeathToDSStore-Info.plist"; path = "Resources/DeathToDSStore-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* DeathToDSStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeathToDSStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -312,7 +312,7 @@
 				6CF0583A182A01FF00B959DF /* udis86.c */,
 			);
 			name = libudis86;
-			path = ../mach_override/libudis86;
+			path = mach_star/libudis86;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
